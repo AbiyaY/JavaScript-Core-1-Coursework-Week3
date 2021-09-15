@@ -13,7 +13,10 @@
 let story =
   "I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
 
-let result = story.replace("", "");
+const regex = /dogs/gi;
+const regex1 = /day/gi;
+
+let result = story.replace(regex, "cats").replace(regex1, "night").replace(10, 100000).replace("great", "brilliant");
 
 /* EXPECTED OUTPUT */
 
